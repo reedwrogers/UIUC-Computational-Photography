@@ -66,7 +66,6 @@ def align_images(input_img_1, input_img_2, pts_img_1, pts_img_2,
     # downscale larger image so that lengths between ref points are the same
     len1 = np.linalg.norm(pts_img_1[0]-pts_img_1[1])
     len2 = np.linalg.norm(pts_img_2[0]-pts_img_2[1])
-    print(len1,len2)
     dscale = len2 / len1
 
     if dscale < 1:
